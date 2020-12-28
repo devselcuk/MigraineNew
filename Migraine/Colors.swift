@@ -13,6 +13,8 @@ import UIKit
 struct Colors {
    static let blue1 = #colorLiteral(red: 0.2862745098, green: 0.7450980392, blue: 1, alpha: 1)
     
+    static let blueGray = #colorLiteral(red: 0.4980392157, green: 0.6156862745, blue: 0.8274509804, alpha: 1)
+    
     
     static let purple = #colorLiteral(red: 0.5019607843, green: 0.2823529412, blue: 1, alpha: 1)
     static let pink = #colorLiteral(red: 1, green: 0.6039215686, blue: 0.6941176471, alpha: 1)

@@ -20,7 +20,7 @@ class OnBoardTwoCollectionViewCell: UICollectionViewCell {
     
     override  func awakeFromNib() {
         super.awakeFromNib()
-        blueGradientView.makeGradient(with: [Colors.blue1, Colors.purple])
+        blueGradientView.makeGradient(with: [Colors.blue1, Colors.purple], direction: .vertical)
         
     }
     

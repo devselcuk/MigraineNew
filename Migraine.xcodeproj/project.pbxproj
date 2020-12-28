@@ -22,6 +22,13 @@
 		2ECCACDF25990ACF00BCA1AF /* OnBoardOneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECCACDE25990ACF00BCA1AF /* OnBoardOneCollectionViewCell.swift */; };
 		2ECCACE4259916B000BCA1AF /* OnboardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECCACE3259916B000BCA1AF /* OnboardFactory.swift */; };
 		2ECCACEC2599183E00BCA1AF /* OnBoardTwoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECCACEB2599183D00BCA1AF /* OnBoardTwoCollectionViewCell.swift */; };
+		2EDFE8CB259A55F000E4D2C1 /* GradientLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDFE8CA259A55F000E4D2C1 /* GradientLabel.swift */; };
+		2EDFE8D0259A5AD300E4D2C1 /* OnBoardThreeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDFE8CF259A5AD300E4D2C1 /* OnBoardThreeCollectionViewCell.swift */; };
+		2EDFE8DC259A5E2500E4D2C1 /* UserTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDFE8DB259A5E2500E4D2C1 /* UserTypeViewController.swift */; };
+		2EDFE8E1259A5E4300E4D2C1 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDFE8E0259A5E4300E4D2C1 /* UserType.swift */; };
+		2EDFE8E6259A69C600E4D2C1 /* InputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EDFE8E5259A69C600E4D2C1 /* InputView.xib */; };
+		2EDFE8EB259A69D500E4D2C1 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDFE8EA259A69D500E4D2C1 /* InputView.swift */; };
+		2EDFE8F0259A710100E4D2C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDFE8EF259A710100E4D2C1 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +70,13 @@
 		2ECCACDE25990ACF00BCA1AF /* OnBoardOneCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardOneCollectionViewCell.swift; sourceTree = "<group>"; };
 		2ECCACE3259916B000BCA1AF /* OnboardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardFactory.swift; sourceTree = "<group>"; };
 		2ECCACEB2599183D00BCA1AF /* OnBoardTwoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardTwoCollectionViewCell.swift; sourceTree = "<group>"; };
+		2EDFE8CA259A55F000E4D2C1 /* GradientLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLabel.swift; sourceTree = "<group>"; };
+		2EDFE8CF259A5AD300E4D2C1 /* OnBoardThreeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardThreeCollectionViewCell.swift; sourceTree = "<group>"; };
+		2EDFE8DB259A5E2500E4D2C1 /* UserTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeViewController.swift; sourceTree = "<group>"; };
+		2EDFE8E0259A5E4300E4D2C1 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
+		2EDFE8E5259A69C600E4D2C1 /* InputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputView.xib; sourceTree = "<group>"; };
+		2EDFE8EA259A69D500E4D2C1 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		2EDFE8EF259A710100E4D2C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,13 +129,15 @@
 			children = (
 				2ECCAC3A2597695500BCA1AF /* AppDelegate.swift */,
 				2ECCAC3C2597695500BCA1AF /* SceneDelegate.swift */,
-				2ECCAC3E2597695500BCA1AF /* ViewController.swift */,
-				2ECCACD4259902EB00BCA1AF /* OnboardViewController.swift */,
-				2ECCACDE25990ACF00BCA1AF /* OnBoardOneCollectionViewCell.swift */,
-				2ECCACEB2599183D00BCA1AF /* OnBoardTwoCollectionViewCell.swift */,
-				2ECCACE3259916B000BCA1AF /* OnboardFactory.swift */,
+				2EDFE8D4259A5B7800E4D2C1 /* Onboard */,
 				2ECCACCF259901BC00BCA1AF /* UIViewControllerBackground+extensions.swift */,
+				2EDFE8E5259A69C600E4D2C1 /* InputView.xib */,
+				2EDFE8EA259A69D500E4D2C1 /* InputView.swift */,
+				2EDFE8EF259A710100E4D2C1 /* LoginViewController.swift */,
+				2EDFE8DB259A5E2500E4D2C1 /* UserTypeViewController.swift */,
+				2EDFE8E0259A5E4300E4D2C1 /* UserType.swift */,
 				2ECCACCA2598FFB100BCA1AF /* BlueGradientView.swift */,
+				2EDFE8CA259A55F000E4D2C1 /* GradientLabel.swift */,
 				2ECCAC6D25976B1200BCA1AF /* Colors.swift */,
 				2ECCAC402597695500BCA1AF /* Main.storyboard */,
 				2ECCAC432597695D00BCA1AF /* Assets.xcassets */,
@@ -147,6 +163,19 @@
 				2ECCAC5E2597695D00BCA1AF /* Info.plist */,
 			);
 			path = MigraineUITests;
+			sourceTree = "<group>";
+		};
+		2EDFE8D4259A5B7800E4D2C1 /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				2ECCAC3E2597695500BCA1AF /* ViewController.swift */,
+				2ECCACD4259902EB00BCA1AF /* OnboardViewController.swift */,
+				2ECCACDE25990ACF00BCA1AF /* OnBoardOneCollectionViewCell.swift */,
+				2ECCACEB2599183D00BCA1AF /* OnBoardTwoCollectionViewCell.swift */,
+				2EDFE8CF259A5AD300E4D2C1 /* OnBoardThreeCollectionViewCell.swift */,
+				2ECCACE3259916B000BCA1AF /* OnboardFactory.swift */,
+			);
+			path = Onboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ECCAC472597695D00BCA1AF /* LaunchScreen.storyboard in Resources */,
+				2EDFE8E6259A69C600E4D2C1 /* InputView.xib in Resources */,
 				2ECCAC442597695D00BCA1AF /* Assets.xcassets in Resources */,
 				2ECCAC422597695500BCA1AF /* Main.storyboard in Resources */,
 			);
@@ -281,12 +311,18 @@
 			files = (
 				2ECCAC3F2597695500BCA1AF /* ViewController.swift in Sources */,
 				2ECCACEC2599183E00BCA1AF /* OnBoardTwoCollectionViewCell.swift in Sources */,
+				2EDFE8E1259A5E4300E4D2C1 /* UserType.swift in Sources */,
 				2ECCACD5259902EB00BCA1AF /* OnboardViewController.swift in Sources */,
+				2EDFE8D0259A5AD300E4D2C1 /* OnBoardThreeCollectionViewCell.swift in Sources */,
+				2EDFE8DC259A5E2500E4D2C1 /* UserTypeViewController.swift in Sources */,
 				2ECCACE4259916B000BCA1AF /* OnboardFactory.swift in Sources */,
+				2EDFE8CB259A55F000E4D2C1 /* GradientLabel.swift in Sources */,
 				2ECCAC6E25976B1200BCA1AF /* Colors.swift in Sources */,
 				2ECCACD0259901BC00BCA1AF /* UIViewControllerBackground+extensions.swift in Sources */,
 				2ECCAC3B2597695500BCA1AF /* AppDelegate.swift in Sources */,
 				2ECCACCB2598FFB200BCA1AF /* BlueGradientView.swift in Sources */,
+				2EDFE8F0259A710100E4D2C1 /* LoginViewController.swift in Sources */,
+				2EDFE8EB259A69D500E4D2C1 /* InputView.swift in Sources */,
 				2ECCAC3D2597695500BCA1AF /* SceneDelegate.swift in Sources */,
 				2ECCACDF25990ACF00BCA1AF /* OnBoardOneCollectionViewCell.swift in Sources */,
 			);

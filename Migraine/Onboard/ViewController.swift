@@ -1,23 +1,23 @@
 //
-//  OnBoardOneCollectionViewCell.swift
+//  ViewController.swift
 //  Migraine
 //
-//  Created by Asiye on 27.12.2020.
+//  Created by Asiye on 26.12.2020.
 //
 
 import UIKit
 
-class OnBoardOneCollectionViewCell: UICollectionViewCell {
-    
+class ViewController: UIViewController {
     @IBOutlet weak var gradientLabel: UILabel!
     
     @IBOutlet weak var blueGradientView: UIView!
     
     
-    override  func awakeFromNib() {
-        super.awakeFromNib()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        backGroundOne()
         
-        blueGradientView.makeGradient(with: [Colors.blue1, Colors.purple])
+        blueGradientView.makeGradient(with: [Colors.blue1, Colors.purple], direction: .horizontal)
         
         let strokeTextAttributes: [NSAttributedString.Key : Any] = [
             .strokeColor : Colors.gradientColor(bounds: gradientLabel.bounds) ?? UIColor.clear,
@@ -25,7 +25,17 @@ class OnBoardOneCollectionViewCell: UICollectionViewCell {
             .strokeWidth : -2.0,
             ]
         gradientLabel.attributedText = NSAttributedString(string: gradientLabel.text ?? "", attributes: strokeTextAttributes)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+            self.performSegue(withIdentifier: "toBoard", sender: Any.self)
+        }
+        
+        
+        // Do any additional setup after loading the view.
     }
-    
-    
+
+
 }
+
+
+

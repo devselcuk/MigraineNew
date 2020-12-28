@@ -120,6 +120,43 @@ extension UIViewController {
     
     
     
+    func backgroungThree() {
+        clearBg()
+        
+        let imageView = UIImageView(image: UIImage(named: "gradientBg"))
+        imageView.contentMode = .scaleAspectFill
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(imageView)
+        imageView.tag = 105
+        
+        let constraintsOne = [imageView.topAnchor.constraint(equalTo: view.topAnchor), imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 5), imageView.leftAnchor.constraint(equalTo: view.leftAnchor), imageView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 5)]
+        NSLayoutConstraint.activate(constraintsOne)
+        
+        let topImageview = UIImageView(image: UIImage(named: "topGradient"))
+        view.addSubview(topImageview)
+        topImageview.contentMode = .scaleToFill
+        topImageview.translatesAutoresizingMaskIntoConstraints = false
+        topImageview.tag = 104
+        
+        let constraintsTwo = [topImageview.topAnchor.constraint(equalTo: view.topAnchor), topImageview.leftAnchor.constraint(equalTo: view.leftAnchor), topImageview.rightAnchor.constraint(equalTo: view.rightAnchor), topImageview.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.15)]
+        NSLayoutConstraint.activate(constraintsTwo)
+        
+     
+        
+        let rightImageView = UIImageView(image: UIImage(named: "circleGradient"))
+        view.addSubview(rightImageView)
+        rightImageView.contentMode = .scaleAspectFit
+        rightImageView.translatesAutoresizingMaskIntoConstraints = false
+        rightImageView.tag = 101
+        
+        let constraintsFive = [rightImageView.widthAnchor.constraint(equalToConstant: 48), rightImageView.heightAnchor.constraint(equalToConstant: 48), rightImageView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 16), rightImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: view.frame.height * 0.2)]
+        NSLayoutConstraint.activate(constraintsFive)
+        sendBgBack()
+        
+    }
+    
+    
+    
     
     func clearBg() {
         for i in 101...105 {
