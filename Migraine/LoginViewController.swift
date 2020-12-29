@@ -6,11 +6,10 @@
 //
 
 import UIKit
-
+import PopupDialog
 class LoginViewController: UIViewController {
 
-    
-    @IBOutlet weak var nameInputView: InputView!
+   //IBOutlets
     
     @IBOutlet weak var mailInputView: InputView!
     @IBOutlet weak var passwordInputView: InputView!
@@ -21,6 +20,22 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var appleLabel: UILabel!
     
     @IBOutlet weak var facebookLabel: UILabel!
+    
+    //Properties
+    
+    
+    
+    
+    //IBActions
+    
+   
+    
+    @IBAction func popForgotPassword(_ sender: UIButton) {
+        let popUp = PopupDialog(viewController: ForgotPasswordViewController())
+        self.present(popUp, animated: true, completion: nil)
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +50,7 @@ class LoginViewController: UIViewController {
     }
     
     func configureInputViews() {
-        nameInputView.titleLabel.text = "İsminiz"
-        nameInputView.placeHolderText = "İsminizi yazınız"
+   
         
         mailInputView.titleLabel.text = "E-mail adresiniz"
         mailInputView.placeHolderText = "Email adresinizi yazınız"
@@ -62,14 +76,10 @@ class LoginViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
-    */
 
 }

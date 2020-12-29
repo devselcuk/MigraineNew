@@ -138,7 +138,7 @@ extension UIViewController {
         topImageview.translatesAutoresizingMaskIntoConstraints = false
         topImageview.tag = 104
         
-        let constraintsTwo = [topImageview.topAnchor.constraint(equalTo: view.topAnchor), topImageview.leftAnchor.constraint(equalTo: view.leftAnchor), topImageview.rightAnchor.constraint(equalTo: view.rightAnchor), topImageview.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.15)]
+        let constraintsTwo = [topImageview.topAnchor.constraint(equalTo: view.topAnchor, constant: -300), topImageview.leftAnchor.constraint(equalTo: view.leftAnchor), topImageview.rightAnchor.constraint(equalTo: view.rightAnchor), topImageview.bottomAnchor.constraint(equalTo: view.topAnchor, constant: 130)]
         NSLayoutConstraint.activate(constraintsTwo)
         
      
@@ -151,6 +151,36 @@ extension UIViewController {
         
         let constraintsFive = [rightImageView.widthAnchor.constraint(equalToConstant: 48), rightImageView.heightAnchor.constraint(equalToConstant: 48), rightImageView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 16), rightImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: view.frame.height * 0.2)]
         NSLayoutConstraint.activate(constraintsFive)
+        sendBgBack()
+        
+    }
+    
+    
+    func flatBackground() {
+        clearBg()
+        
+        let imageView = UIImageView(image: UIImage(named: "gradientBg"))
+        imageView.contentMode = .scaleAspectFill
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(imageView)
+        imageView.tag = 105
+        
+        let constraintsOne = [imageView.topAnchor.constraint(equalTo: view.topAnchor), imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 5), imageView.leftAnchor.constraint(equalTo: view.leftAnchor), imageView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 5)]
+        NSLayoutConstraint.activate(constraintsOne)
+        
+        let flatImageView = UIImageView(image: UIImage(named: "flatBg"))
+        flatImageView.contentMode = .scaleToFill
+        flatImageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(flatImageView)
+        flatImageView.tag = 104
+        
+        let constraintsTwo = [flatImageView.topAnchor.constraint(equalTo: view.topAnchor), flatImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor), flatImageView.leftAnchor.constraint(equalTo: view.leftAnchor), flatImageView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier:  0.4)]
+        NSLayoutConstraint.activate(constraintsTwo)
+        
+        
+        
+        
+        
         sendBgBack()
         
     }

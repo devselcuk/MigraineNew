@@ -22,6 +22,7 @@ class InputView  : UIView {
             print("aabbcc")
             if textIsPassword {
                 lineView.makeGradient(with: [Colors.blueGray,Colors.blueGray], direction: .horizontal)
+                textField.isSecureTextEntry = true
             } else {
                 lineView.makeGradient(with: [Colors.blue1, Colors.purple], direction: .horizontal)
             }
@@ -31,7 +32,7 @@ class InputView  : UIView {
     
     var placeHolderText : String = "" {
         willSet {
-            let attrPlaceString = NSAttributedString(string: newValue, attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+            let attrPlaceString = NSAttributedString(string: newValue, attributes: [NSAttributedString.Key.foregroundColor : (textIsPassword ? Colors.blueGray : UIColor.white)])
             textField.attributedPlaceholder = attrPlaceString
         }
     }
