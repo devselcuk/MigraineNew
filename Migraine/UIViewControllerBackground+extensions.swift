@@ -174,7 +174,7 @@ extension UIViewController {
         view.addSubview(flatImageView)
         flatImageView.tag = 104
         
-        let constraintsTwo = [flatImageView.topAnchor.constraint(equalTo: view.topAnchor), flatImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor), flatImageView.leftAnchor.constraint(equalTo: view.leftAnchor), flatImageView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier:  0.4)]
+        let constraintsTwo = [flatImageView.topAnchor.constraint(equalTo: view.topAnchor), flatImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor), flatImageView.leftAnchor.constraint(equalTo: view.leftAnchor), flatImageView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier:  0.3)]
         NSLayoutConstraint.activate(constraintsTwo)
         
         

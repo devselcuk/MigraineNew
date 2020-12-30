@@ -36,3 +36,6 @@ class GradientLabel : UILabel {
     
     
 }
+
+
+

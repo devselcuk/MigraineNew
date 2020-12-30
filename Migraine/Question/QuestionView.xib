@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionView" customModule="Migraine" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="zEV-2n-5Ug" id="pdS-ef-ZBP"/>
+                <outlet property="collectionView" destination="wj7-Nx-xqb" id="AUd-fh-mBW"/>
+                <outlet property="equalConstraint" destination="UfM-e7-O0J" id="rrA-bk-y6d"/>
+                <outlet property="heightConstraint" destination="jLV-yk-gZa" id="wRe-C9-7vb"/>
+                <outlet property="laterButton" destination="Gys-GY-mM5" id="ROv-5k-xIc"/>
+                <outlet property="questionLabel" destination="nPJ-t9-VCR" id="xF8-HX-wKa"/>
+                <outlet property="saveButton" destination="jZK-cM-f9f" id="yjO-wf-Km0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="514" height="395"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gys-GY-mM5">
+                    <rect key="frame" x="30" y="311" width="145.5" height="30"/>
+                    <color key="backgroundColor" red="0.90588235289999997" green="0.91372549020000005" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="rVR-kd-J8c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="9"/>
+                    <state key="normal" title="Sonra Devam Et">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZK-cM-f9f">
+                    <rect key="frame" x="185.5" y="311" width="308.5" height="40"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="W4S-L7-v5q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
+                    <state key="normal" title="Geç">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="next:" destination="-1" eventType="touchUpInside" id="xOY-hQ-lTo"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nPJ-t9-VCR">
+                    <rect key="frame" x="0.0" y="44" width="514" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="65e-vr-oYJ"/>
+                    </constraints>
+                    <string key="text">Bu atağınızın en yüksek ağrı seviyesi  nedir?
+</string>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEV-2n-5Ug">
+                    <rect key="frame" x="0.0" y="114" width="514" height="197"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wj7-Nx-xqb">
+                    <rect key="frame" x="0.0" y="114" width="514" height="197"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="999" constant="197" id="jLV-yk-gZa"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Jm3-0c-1wQ">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="zEV-2n-5Ug" firstAttribute="centerY" secondItem="wj7-Nx-xqb" secondAttribute="centerY" id="21O-e5-DVF"/>
+                <constraint firstItem="jZK-cM-f9f" firstAttribute="top" secondItem="wj7-Nx-xqb" secondAttribute="bottom" id="34h-BI-tHA"/>
+                <constraint firstItem="jZK-cM-f9f" firstAttribute="width" secondItem="wj7-Nx-xqb" secondAttribute="width" multiplier="0.6" id="3nW-Ma-kst"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jZK-cM-f9f" secondAttribute="trailing" constant="20" id="6Lv-Tn-Mwd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nPJ-t9-VCR" secondAttribute="trailing" id="71y-wp-G5S"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wj7-Nx-xqb" secondAttribute="bottom" constant="50" id="7sI-Fq-Qm2"/>
+                <constraint firstItem="nPJ-t9-VCR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="8Vg-u6-l2k"/>
+                <constraint firstItem="wj7-Nx-xqb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Cqw-Pv-0qL"/>
+                <constraint firstItem="zEV-2n-5Ug" firstAttribute="width" secondItem="wj7-Nx-xqb" secondAttribute="width" id="GNS-gr-zsB"/>
+                <constraint firstItem="Gys-GY-mM5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="JKw-MM-4sz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wj7-Nx-xqb" secondAttribute="trailing" id="SOx-gF-dhi"/>
+                <constraint firstItem="zEV-2n-5Ug" firstAttribute="height" secondItem="wj7-Nx-xqb" secondAttribute="height" id="UfM-e7-O0J"/>
+                <constraint firstItem="Gys-GY-mM5" firstAttribute="top" secondItem="wj7-Nx-xqb" secondAttribute="bottom" id="VkF-x9-3sN"/>
+                <constraint firstItem="wj7-Nx-xqb" firstAttribute="top" secondItem="nPJ-t9-VCR" secondAttribute="bottom" constant="20" id="W9q-GQ-aej"/>
+                <constraint firstItem="nPJ-t9-VCR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XKe-xa-cs8"/>
+                <constraint firstItem="jZK-cM-f9f" firstAttribute="leading" secondItem="Gys-GY-mM5" secondAttribute="trailing" constant="10" id="bz9-B5-Uah"/>
+                <constraint firstItem="zEV-2n-5Ug" firstAttribute="centerX" secondItem="wj7-Nx-xqb" secondAttribute="centerX" id="jdk-hb-lDw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="197.10144927536234" y="-101.45089285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
