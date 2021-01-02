@@ -44,8 +44,8 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gerilim" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qjg-2M-VJf">
-                        <rect key="frame" x="8" y="128.5" width="175" height="15.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gerilim" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="qjg-2M-VJf">
+                        <rect key="frame" x="8" y="128.5" width="175" height="58.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="11"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -61,6 +61,7 @@
                 <constraint firstItem="RHm-LD-Yiv" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Ira-E3-njn"/>
                 <constraint firstItem="qjg-2M-VJf" firstAttribute="top" secondItem="RHm-LD-Yiv" secondAttribute="bottom" id="NmT-bD-y0y"/>
                 <constraint firstItem="qjg-2M-VJf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="tp5-eD-11v"/>
+                <constraint firstAttribute="bottom" secondItem="qjg-2M-VJf" secondAttribute="bottom" id="zlM-5I-LAn"/>
             </constraints>
             <size key="customSize" width="191" height="187"/>
             <userDefinedRuntimeAttributes>

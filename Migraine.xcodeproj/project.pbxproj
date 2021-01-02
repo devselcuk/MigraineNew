@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		28DD9D43DE577F3C7EF8E937 /* Pods_MigraineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D90B84C4C50BC3826B00F90 /* Pods_MigraineTests.framework */; };
+		2E06C7FA259F279400337F0B /* QuestionThreeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06C7F8259F279400337F0B /* QuestionThreeCollectionViewCell.swift */; };
+		2E06C7FB259F279400337F0B /* QuestionThreeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E06C7F9259F279400337F0B /* QuestionThreeCollectionViewCell.xib */; };
+		2E06C801259FB06B00337F0B /* YesNoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06C7FF259FB06A00337F0B /* YesNoCollectionViewCell.swift */; };
+		2E06C802259FB06B00337F0B /* YesNoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E06C800259FB06A00337F0B /* YesNoCollectionViewCell.xib */; };
+		2E06C80725A08E5800337F0B /* Attack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06C80625A08E5800337F0B /* Attack.swift */; };
+		2E06C80C25A0AA8300337F0B /* QuestionInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06C80B25A0AA8300337F0B /* QuestionInputView.swift */; };
+		2E06C81125A0AA9800337F0B /* QuestionInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E06C81025A0AA9800337F0B /* QuestionInputView.xib */; };
 		2E8F2326259BB0F30049F11C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F2325259BB0F30049F11C /* SignUpViewController.swift */; };
 		2E8F2333259BC36F0049F11C /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F2331259BC36F0049F11C /* ForgotPasswordViewController.swift */; };
 		2E8F2334259BC36F0049F11C /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E8F2332259BC36F0049F11C /* ForgotPasswordViewController.xib */; };
@@ -68,6 +75,13 @@
 		201E9F1774011CB9ECE72F99 /* Pods-MigraineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MigraineTests.release.xcconfig"; path = "Target Support Files/Pods-MigraineTests/Pods-MigraineTests.release.xcconfig"; sourceTree = "<group>"; };
 		2B4556252F2F3522885B1012 /* Pods-Migraine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Migraine.release.xcconfig"; path = "Target Support Files/Pods-Migraine/Pods-Migraine.release.xcconfig"; sourceTree = "<group>"; };
 		2BE5100EEC60F3F2C5A095A8 /* Pods-Migraine-MigraineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Migraine-MigraineUITests.debug.xcconfig"; path = "Target Support Files/Pods-Migraine-MigraineUITests/Pods-Migraine-MigraineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E06C7F8259F279400337F0B /* QuestionThreeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionThreeCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E06C7F9259F279400337F0B /* QuestionThreeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionThreeCollectionViewCell.xib; sourceTree = "<group>"; };
+		2E06C7FF259FB06A00337F0B /* YesNoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesNoCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E06C800259FB06A00337F0B /* YesNoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YesNoCollectionViewCell.xib; sourceTree = "<group>"; };
+		2E06C80625A08E5800337F0B /* Attack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attack.swift; sourceTree = "<group>"; };
+		2E06C80B25A0AA8300337F0B /* QuestionInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionInputView.swift; sourceTree = "<group>"; };
+		2E06C81025A0AA9800337F0B /* QuestionInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionInputView.xib; sourceTree = "<group>"; };
 		2E8F2325259BB0F30049F11C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2E8F2331259BC36F0049F11C /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		2E8F2332259BC36F0049F11C /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
@@ -165,6 +179,8 @@
 			children = (
 				2EDFE8E5259A69C600E4D2C1 /* InputView.xib */,
 				2EDFE8EA259A69D500E4D2C1 /* InputView.swift */,
+				2E06C80B25A0AA8300337F0B /* QuestionInputView.swift */,
+				2E06C81025A0AA9800337F0B /* QuestionInputView.xib */,
 				2ECCACCA2598FFB100BCA1AF /* BlueGradientView.swift */,
 				2EDFE8CA259A55F000E4D2C1 /* GradientLabel.swift */,
 			);
@@ -179,6 +195,10 @@
 				2E8F2357259C23380049F11C /* CustomTabBar.swift */,
 				2E8F235F259C26260049F11C /* QuestionView.swift */,
 				2E8F236E259C37C20049F11C /* QuestionCollectionViewCell.swift */,
+				2E06C7F8259F279400337F0B /* QuestionThreeCollectionViewCell.swift */,
+				2E06C7FF259FB06A00337F0B /* YesNoCollectionViewCell.swift */,
+				2E06C800259FB06A00337F0B /* YesNoCollectionViewCell.xib */,
+				2E06C7F9259F279400337F0B /* QuestionThreeCollectionViewCell.xib */,
 				2E8F236F259C37C20049F11C /* QuestionCollectionViewCell.xib */,
 				2E8F2364259C263D0049F11C /* QuestionView.xib */,
 			);
@@ -215,6 +235,7 @@
 				2EDFE8D4259A5B7800E4D2C1 /* Onboard */,
 				2ECCACCF259901BC00BCA1AF /* UIViewControllerBackground+extensions.swift */,
 				2E8F2325259BB0F30049F11C /* SignUpViewController.swift */,
+				2E06C80625A08E5800337F0B /* Attack.swift */,
 				2E8F2345259BC94A0049F11C /* CustomViews */,
 				2E8F233E259BC9150049F11C /* ForgotPassword */,
 				2EDFE8EF259A710100E4D2C1 /* LoginViewController.swift */,
@@ -384,11 +405,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8F2371259C37C20049F11C /* QuestionCollectionViewCell.xib in Resources */,
+				2E06C81125A0AA9800337F0B /* QuestionInputView.xib in Resources */,
 				2ECCAC472597695D00BCA1AF /* LaunchScreen.storyboard in Resources */,
 				2EDFE8E6259A69C600E4D2C1 /* InputView.xib in Resources */,
+				2E06C7FB259F279400337F0B /* QuestionThreeCollectionViewCell.xib in Resources */,
 				2E8F2365259C263D0049F11C /* QuestionView.xib in Resources */,
 				2ECCAC442597695D00BCA1AF /* Assets.xcassets in Resources */,
 				2ECCAC422597695500BCA1AF /* Main.storyboard in Resources */,
+				2E06C802259FB06B00337F0B /* YesNoCollectionViewCell.xib in Resources */,
 				2E8F2334259BC36F0049F11C /* ForgotPasswordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,7 +546,9 @@
 				2EDFE8E1259A5E4300E4D2C1 /* UserType.swift in Sources */,
 				2ECCACD5259902EB00BCA1AF /* OnboardViewController.swift in Sources */,
 				2EDFE8D0259A5AD300E4D2C1 /* OnBoardThreeCollectionViewCell.swift in Sources */,
+				2E06C80C25A0AA8300337F0B /* QuestionInputView.swift in Sources */,
 				2E8F234D259BC9DB0049F11C /* MainViewController.swift in Sources */,
+				2E06C7FA259F279400337F0B /* QuestionThreeCollectionViewCell.swift in Sources */,
 				2E8F2326259BB0F30049F11C /* SignUpViewController.swift in Sources */,
 				2EDFE8DC259A5E2500E4D2C1 /* UserTypeViewController.swift in Sources */,
 				2E8F2370259C37C20049F11C /* QuestionCollectionViewCell.swift in Sources */,
@@ -533,6 +559,7 @@
 				2E8F2360259C26270049F11C /* QuestionView.swift in Sources */,
 				2ECCAC6E25976B1200BCA1AF /* Colors.swift in Sources */,
 				2ECCACD0259901BC00BCA1AF /* UIViewControllerBackground+extensions.swift in Sources */,
+				2E06C801259FB06B00337F0B /* YesNoCollectionViewCell.swift in Sources */,
 				2ECCAC3B2597695500BCA1AF /* AppDelegate.swift in Sources */,
 				2ECCACCB2598FFB200BCA1AF /* BlueGradientView.swift in Sources */,
 				2EDFE8F0259A710100E4D2C1 /* LoginViewController.swift in Sources */,
@@ -541,6 +568,7 @@
 				2EDFE8EB259A69D500E4D2C1 /* InputView.swift in Sources */,
 				2ECCAC3D2597695500BCA1AF /* SceneDelegate.swift in Sources */,
 				2ECCACDF25990ACF00BCA1AF /* OnBoardOneCollectionViewCell.swift in Sources */,
+				2E06C80725A08E5800337F0B /* Attack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

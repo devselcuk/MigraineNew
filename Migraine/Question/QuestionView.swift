@@ -11,9 +11,9 @@ import UIKit
 class QuestionView : UIView {
     
     
-   
     
- //IBOutlets
+    
+    //IBOutlets
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -26,6 +26,20 @@ class QuestionView : UIView {
     @IBOutlet weak var equalConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
+    
+    var textField : UITextField = {
+        let field = UITextField()
+        
+        let bottomLine = UIView()
+        bottomLine.backgroundColor = .gray
+        field.addSubview(bottomLine)
+        let constraints = [bottomLine.topAnchor.constraint(equalTo: field.bottomAnchor), bottomLine.leftAnchor.constraint(equalTo: field.leftAnchor), bottomLine.rightAnchor.constraint(equalTo: field.rightAnchor), bottomLine.heightAnchor.constraint(equalToConstant: 2)]
+        NSLayoutConstraint.activate(constraints)
+        
+        
+        return field
+    }()
+    
     
     
     //properties
@@ -40,16 +54,23 @@ class QuestionView : UIView {
     @IBAction func next(_ sender: Any) {
         
         
-       addItems()
-        updateConstraint()
+        addItems()
+        updateUI()
+        
+        
         
     }
     
-  
+    
+    
+    //inits
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUp()
+        
+        
+        
         
         
     }
@@ -60,12 +81,12 @@ class QuestionView : UIView {
         setUp()
     }
     
-   
     
     
     
     
     
+    //methods
     
     
     func setUp() {
@@ -96,42 +117,70 @@ class QuestionView : UIView {
         
         collectionView.backgroundView?.backgroundColor = .green
         
+        
+        let inputView = QuestionInputView()
+        
+        self.addSubview(inputView)
+        inputView.translatesAutoresizingMaskIntoConstraints = false
+        let constraintsLabel = [inputView.bottomAnchor.constraint(equalTo: collectionView.bottomAnchor),inputView.leftAnchor.constraint(equalTo: collectionView.leftAnchor, constant: 30 ), inputView.rightAnchor.constraint(equalTo: collectionView.rightAnchor, constant: -30), inputView.heightAnchor.constraint(equalToConstant: 100)]
+        NSLayoutConstraint.activate(constraintsLabel)
+        
+        
+        
         saveButton.makeGradient(with: [Colors.purple, Colors.pink], direction: .horizontal)
         laterButton.makeGradient(with: [Colors.purple, Colors.pink], direction: .horizontal)
         saveButton.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         laterButton.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
-      
+        
         let cellNib = UINib(nibName: "QuestionCollectionViewCell", bundle: nil)
         collectionView.register(cellNib, forCellWithReuseIdentifier: "question")
+        
+        let cellNib1 = UINib(nibName: "QuestionThreeCollectionViewCell", bundle: nil)
+        collectionView.register(cellNib1, forCellWithReuseIdentifier: "cell1")
+        
+        let cellNib2 = UINib(nibName: "YesNoCollectionViewCell", bundle: nil)
+        collectionView.register(cellNib2, forCellWithReuseIdentifier: "yesno")
+        
+        
+        
         bringSubviewToFront(collectionView)
         
     }
     
-    func updateConstraint() {
+    func updateUI() {
         let x = question.optionImageNames.count / 4
         
-    
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.8, options: .curveEaseIn) {
-            self.heightConstraint.constant = CGFloat(250 + (150 * x))
+        
+        UIView.animate(withDuration: 0.5) {
+            if self.index == 3 {
+                self.heightConstraint.constant = 750
+            } else {
+                self.heightConstraint.constant = CGFloat(300 + (150 * x))
+            }
+            
             
             self.collectionView.performBatchUpdates {
                 self.collectionView.reloadSections(IndexSet(integer : 0))
             } completion: { (_) in
                 
             }
-
+            
             
             self.layoutIfNeeded()
         } completion: { (_) in
-        
+            
         }
-
-         
-        backgroundView.makeGradientInstant(with: [Colors.topDarkBlue, Colors.bottomDarkBlue], direction: .vertical)
+        
+        if index == 3 {
+            backgroundView.makeGradientInstant(with: [Colors.blue1, Colors.purple], direction: .fromTopLeft)
+        } else {
+            backgroundView.makeGradientInstant(with: [Colors.topDarkBlue, Colors.bottomDarkBlue], direction: .vertical)
+        }
+        
         backgroundView.makeEqualShadowInstant(with: .black)
         
-       
-   
+        
+        
     }
     
     func handleExceptions(_ cell : QuestionCollectionViewCell?) {
@@ -142,6 +191,10 @@ class QuestionView : UIView {
     
     @objc func addItems() {
         index += 1
+        
+        if index >= questionBank.questions.count {
+            return
+        }
         
         question = questionBank.questions[index]
         questionLabel.text = question.question
@@ -161,9 +214,30 @@ extension QuestionView : UICollectionViewDelegate , UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        if index == 3 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell1", for: indexPath) as! QuestionThreeCollectionViewCell
+            
+            cell.imgView.image = UIImage(named: question.optionImageNames[indexPath.row])
+            cell.nameLabel.text = question.optionImageNames[indexPath.row]
+            
+            
+            
+            return cell
+            
+        }
+        
+        if index == 11 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "yesno", for: indexPath) as! YesNoCollectionViewCell
+            cell.label.text = question.optionImageNames[indexPath.row]
+            
+            
+            return cell
+        }
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "question", for: indexPath) as! QuestionCollectionViewCell
         
-    
+        
         
         let option = question.optionImageNames[indexPath.row]
         
@@ -180,8 +254,17 @@ extension QuestionView : UICollectionViewDelegate , UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let count = question.optionImageNames.count
+        if index == 3 || index == 11{
+            if indexPath.row == 4 {
+                
+                return CGSize(width: collectionView.frame.size.width, height: 200)
+            }
+            return CGSize(width: (collectionView.frame.size.width / 2) - 16, height: 200)
+        }
         
+        
+        
+        let count = question.optionImageNames.count
         let width = count >= 3 ? collectionView.frame.width / 3 : collectionView.frame.width / CGFloat(count)
         
         
@@ -191,15 +274,37 @@ extension QuestionView : UICollectionViewDelegate , UICollectionViewDataSource, 
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    
+        if index == 3 {
+            guard let cell = collectionView.cellForItem(at: indexPath) as? QuestionThreeCollectionViewCell else { return }
+            cell.imgView.image = UIImage(named: "\(question.optionImageNames[indexPath.row])1")
+        }
+        
+        if index == 11 {
+            guard let cell = collectionView.cellForItem(at: indexPath) as? YesNoCollectionViewCell else { return}
+            cell.bgView.backgroundColor = Colors.gradientColor2(bounds: cell.bgView.bounds)
+        }
+        
+        
+        
         guard let cell = collectionView.cellForItem(at: indexPath) as? QuestionCollectionViewCell else { return}
-    
+        
         cell.imgContainerView.backgroundColor = Colors.gradientColor2(bounds: cell.imgContainerView.bounds)
     }
+    
+    
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-     
+        if index == 3 {
+            guard let cell = collectionView.cellForItem(at: indexPath) as? QuestionThreeCollectionViewCell else { return }
+            cell.imgView.image = UIImage(named: "\(question.optionImageNames[indexPath.row])")
+        }
+        
+        if index == 11 {
+            guard let cell = collectionView.cellForItem(at: indexPath) as? YesNoCollectionViewCell else { return}
+            cell.bgView.backgroundColor = Colors.gradientColor(bounds: cell.bgView.bounds)
+        }
+        
         guard let cell = collectionView.cellForItem(at: indexPath) as? QuestionCollectionViewCell else { return}
-   
+        
         cell.imgContainerView.backgroundColor = Colors.gradientColor(bounds: cell.imgContainerView.bounds)
     }
 }
