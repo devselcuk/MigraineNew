@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pickerCell" id="gTV-IL-0wX" customClass="DatePickerCollectionViewCell" customModule="Migraine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="599" height="501"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="599" height="501"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinkBluePills" translatesAutoresizingMaskIntoConstraints="NO" id="iQd-i6-RPD">
+                        <rect key="frame" x="174.5" y="0.0" width="250.5" height="250.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="iQd-i6-RPD" secondAttribute="height" id="dRV-HC-PVJ"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LAR-YE-FLy">
+                        <rect key="frame" x="50" y="421" width="499" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qfd-9e-Mdn">
+                                <rect key="frame" x="0.0" y="0.0" width="499" height="50"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="vFJ-No-gvU">
+                                        <rect key="frame" x="89.5" y="-83" width="320" height="216"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <locale key="locale" localeIdentifier="tr_TR"/>
+                                        <connections>
+                                            <action selector="dateChanged:" destination="gTV-IL-0wX" eventType="valueChanged" id="P8V-kl-I7u"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="vFJ-No-gvU" firstAttribute="centerY" secondItem="Qfd-9e-Mdn" secondAttribute="centerY" id="7P9-lZ-UBn"/>
+                                    <constraint firstItem="vFJ-No-gvU" firstAttribute="centerX" secondItem="Qfd-9e-Mdn" secondAttribute="centerX" id="Gms-J3-pFI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="rSW-4h-8xq"/>
+                        </constraints>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDo-W8-ELL">
+                        <rect key="frame" x="30" y="360" width="539" height="2"/>
+                        <color key="backgroundColor" red="0.49803921569999998" green="0.61568627450000002" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="I3y-GE-MMg"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Vb-UW-WZM">
+                        <rect key="frame" x="70" y="392" width="459" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarih" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="266-hR-xZw">
+                                <rect key="frame" x="0.0" y="0.0" width="219.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                                <color key="textColor" red="0.49803921569999998" green="0.61568627450000002" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tho-Gf-BGM">
+                                <rect key="frame" x="239.5" y="0.0" width="219.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <color key="textColor" red="0.49803921569999998" green="0.61568627450000002" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Wtl-Ns-wAp"/>
+                        </constraints>
+                    </stackView>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="İlaç ismini yazınız" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-53-RYZ">
+                        <rect key="frame" x="30" y="316" width="539" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="YSv-3v-ptV"/>
+                        </constraints>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="uDo-W8-ELL" firstAttribute="top" secondItem="6h8-53-RYZ" secondAttribute="bottom" id="7nJ-ne-JLm"/>
+                <constraint firstItem="6h8-53-RYZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="87z-dp-aRw"/>
+                <constraint firstAttribute="bottom" secondItem="LAR-YE-FLy" secondAttribute="bottom" constant="30" id="FjV-fa-SMR"/>
+                <constraint firstItem="iQd-i6-RPD" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="FvS-W2-GRP"/>
+                <constraint firstItem="iQd-i6-RPD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GoF-Bi-Mr3"/>
+                <constraint firstItem="LAR-YE-FLy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="50" id="HT7-E1-L5J"/>
+                <constraint firstItem="iQd-i6-RPD" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.5" id="Hak-oG-MAr"/>
+                <constraint firstItem="3Vb-UW-WZM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="70" id="I57-Gd-OJJ"/>
+                <constraint firstAttribute="trailing" secondItem="3Vb-UW-WZM" secondAttribute="trailing" constant="70" id="Q54-Mm-QVF"/>
+                <constraint firstAttribute="trailing" secondItem="LAR-YE-FLy" secondAttribute="trailing" constant="50" id="Ubr-4H-8OP"/>
+                <constraint firstAttribute="trailing" secondItem="6h8-53-RYZ" secondAttribute="trailing" constant="30" id="Z85-Z6-nwo"/>
+                <constraint firstItem="LAR-YE-FLy" firstAttribute="top" secondItem="3Vb-UW-WZM" secondAttribute="bottom" constant="9" id="ah1-e8-PJU"/>
+                <constraint firstItem="uDo-W8-ELL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="lc3-2T-fG0"/>
+                <constraint firstItem="3Vb-UW-WZM" firstAttribute="top" secondItem="uDo-W8-ELL" secondAttribute="bottom" constant="30" id="ywR-Kx-EPg"/>
+                <constraint firstAttribute="trailing" secondItem="uDo-W8-ELL" secondAttribute="trailing" constant="30" id="zun-qR-7gM"/>
+            </constraints>
+            <size key="customSize" width="599" height="501"/>
+            <connections>
+                <outlet property="dateContainerView" destination="Qfd-9e-Mdn" id="PB3-6d-Efc"/>
+                <outlet property="datePickerView" destination="vFJ-No-gvU" id="rxP-am-y8n"/>
+                <outlet property="textField" destination="6h8-53-RYZ" id="Qyq-7t-Moh"/>
+            </connections>
+            <point key="canvasLocation" x="638.40579710144937" y="138.95089285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pinkBluePills" width="531" height="530"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

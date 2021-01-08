@@ -44,7 +44,7 @@ extension UIView : DesignableBorder {
       
     }
     
-    func makeGradientInstant(with colors : [UIColor], direction : GradientDirection) {
+    func makeGradientInstant(with colors : [UIColor], direction : GradientDirection, small : Bool = false) {
         let colorArray = colors.map({ $0.cgColor})
         
         let gradientLayer = CAGradientLayer()
@@ -57,6 +57,10 @@ extension UIView : DesignableBorder {
             gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
             gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
         case .vertical:
+            if small {
+                gradientLayer.frame = CGRect(x: 0, y: bounds.height * 0.25, width: bounds.width, height: bounds.height * 0.75)
+            }
+          
             gradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
             gradientLayer.endPoint = CGPoint(x: 0.5, y: 1)
         case .fromTopLeft:

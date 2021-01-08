@@ -45,7 +45,9 @@ class QuestionInputView: UIView {
         
         cleanButton.makeGradient(with: [Colors.blue1, Colors.purple], direction: .horizontal)
         
-        
+        inputTextField.textAlignment = .center
+        inputTextField.textColor = .white
+        inputTextField.font = UIFont(name: "Avenir", size: 18)
     }
     
 

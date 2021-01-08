@@ -15,6 +15,13 @@
 		2E06C80725A08E5800337F0B /* Attack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06C80625A08E5800337F0B /* Attack.swift */; };
 		2E06C80C25A0AA8300337F0B /* QuestionInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06C80B25A0AA8300337F0B /* QuestionInputView.swift */; };
 		2E06C81125A0AA9800337F0B /* QuestionInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E06C81025A0AA9800337F0B /* QuestionInputView.xib */; };
+		2E06C81F25A0DE2100337F0B /* DatePickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06C81D25A0DE2100337F0B /* DatePickerCollectionViewCell.swift */; };
+		2E06C82025A0DE2100337F0B /* DatePickerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E06C81E25A0DE2100337F0B /* DatePickerCollectionViewCell.xib */; };
+		2E0D007825A1DD6600036A54 /* AmountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D007625A1DD6600036A54 /* AmountCollectionViewCell.swift */; };
+		2E0D007925A1DD6600036A54 /* AmountCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E0D007725A1DD6600036A54 /* AmountCollectionViewCell.xib */; };
+		2E2868D025A36D9300D06B9D /* FaceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2868CE25A36D9300D06B9D /* FaceCollectionViewCell.swift */; };
+		2E2868D125A36D9300D06B9D /* FaceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E2868CF25A36D9300D06B9D /* FaceCollectionViewCell.xib */; };
+		2E2868DD25A3997200D06B9D /* CollectionViewMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2868DC25A3997200D06B9D /* CollectionViewMethods.swift */; };
 		2E8F2326259BB0F30049F11C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F2325259BB0F30049F11C /* SignUpViewController.swift */; };
 		2E8F2333259BC36F0049F11C /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F2331259BC36F0049F11C /* ForgotPasswordViewController.swift */; };
 		2E8F2334259BC36F0049F11C /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E8F2332259BC36F0049F11C /* ForgotPasswordViewController.xib */; };
@@ -26,8 +33,13 @@
 		2E8F2370259C37C20049F11C /* QuestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F236E259C37C20049F11C /* QuestionCollectionViewCell.swift */; };
 		2E8F2371259C37C20049F11C /* QuestionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E8F236F259C37C20049F11C /* QuestionCollectionViewCell.xib */; };
 		2E8F237A259C91FC0049F11C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F2379259C91FC0049F11C /* Question.swift */; };
+		2EAF8A7B25A4817B000CCF87 /* HandleAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF8A7A25A4817B000CCF87 /* HandleAnswers.swift */; };
+		2EAF8AA025A65267000CCF87 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF8A9F25A65267000CCF87 /* SummaryViewController.swift */; };
+		2EAF8AA525A65296000CCF87 /* SummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF8AA425A65296000CCF87 /* SummaryTableViewCell.swift */; };
+		2EAF8AAD25A77659000CCF87 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF8AAC25A77659000CCF87 /* Weather.swift */; };
+		2EAF8AC625A8E2B5000CCF87 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF8AC525A8E2B5000CCF87 /* HistoryView.swift */; };
+		2EAF8ACB25A8E2C7000CCF87 /* HistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EAF8ACA25A8E2C7000CCF87 /* HistoryView.xib */; };
 		2ECCAC3B2597695500BCA1AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECCAC3A2597695500BCA1AF /* AppDelegate.swift */; };
-		2ECCAC3D2597695500BCA1AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECCAC3C2597695500BCA1AF /* SceneDelegate.swift */; };
 		2ECCAC3F2597695500BCA1AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECCAC3E2597695500BCA1AF /* ViewController.swift */; };
 		2ECCAC422597695500BCA1AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ECCAC402597695500BCA1AF /* Main.storyboard */; };
 		2ECCAC442597695D00BCA1AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ECCAC432597695D00BCA1AF /* Assets.xcassets */; };
@@ -82,6 +94,13 @@
 		2E06C80625A08E5800337F0B /* Attack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attack.swift; sourceTree = "<group>"; };
 		2E06C80B25A0AA8300337F0B /* QuestionInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionInputView.swift; sourceTree = "<group>"; };
 		2E06C81025A0AA9800337F0B /* QuestionInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionInputView.xib; sourceTree = "<group>"; };
+		2E06C81D25A0DE2100337F0B /* DatePickerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E06C81E25A0DE2100337F0B /* DatePickerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerCollectionViewCell.xib; sourceTree = "<group>"; };
+		2E0D007625A1DD6600036A54 /* AmountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E0D007725A1DD6600036A54 /* AmountCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountCollectionViewCell.xib; sourceTree = "<group>"; };
+		2E2868CE25A36D9300D06B9D /* FaceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E2868CF25A36D9300D06B9D /* FaceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaceCollectionViewCell.xib; sourceTree = "<group>"; };
+		2E2868DC25A3997200D06B9D /* CollectionViewMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewMethods.swift; sourceTree = "<group>"; };
 		2E8F2325259BB0F30049F11C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2E8F2331259BC36F0049F11C /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		2E8F2332259BC36F0049F11C /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
@@ -93,9 +112,14 @@
 		2E8F236E259C37C20049F11C /* QuestionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCollectionViewCell.swift; sourceTree = "<group>"; };
 		2E8F236F259C37C20049F11C /* QuestionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCollectionViewCell.xib; sourceTree = "<group>"; };
 		2E8F2379259C91FC0049F11C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		2EAF8A7A25A4817B000CCF87 /* HandleAnswers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleAnswers.swift; sourceTree = "<group>"; };
+		2EAF8A9F25A65267000CCF87 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		2EAF8AA425A65296000CCF87 /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
+		2EAF8AAC25A77659000CCF87 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		2EAF8AC525A8E2B5000CCF87 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		2EAF8ACA25A8E2C7000CCF87 /* HistoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryView.xib; sourceTree = "<group>"; };
 		2ECCAC372597695500BCA1AF /* Migraine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Migraine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ECCAC3A2597695500BCA1AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2ECCAC3C2597695500BCA1AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2ECCAC3E2597695500BCA1AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2ECCAC412597695500BCA1AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2ECCAC432597695D00BCA1AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,6 +179,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E0D006E25A1DCA800036A54 /* YesNoCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E06C7FF259FB06A00337F0B /* YesNoCollectionViewCell.swift */,
+				2E06C800259FB06A00337F0B /* YesNoCollectionViewCell.xib */,
+			);
+			path = YesNoCell;
+			sourceTree = "<group>";
+		};
+		2E0D006F25A1DCBB00036A54 /* QuestionThreeCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E06C7F8259F279400337F0B /* QuestionThreeCollectionViewCell.swift */,
+				2E06C7F9259F279400337F0B /* QuestionThreeCollectionViewCell.xib */,
+			);
+			path = QuestionThreeCell;
+			sourceTree = "<group>";
+		};
+		2E0D007025A1DCCA00036A54 /* DatePickerCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E06C81D25A0DE2100337F0B /* DatePickerCollectionViewCell.swift */,
+				2E06C81E25A0DE2100337F0B /* DatePickerCollectionViewCell.xib */,
+			);
+			path = DatePickerCell;
+			sourceTree = "<group>";
+		};
+		2E0D007425A1DCDE00036A54 /* CommonCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E8F236E259C37C20049F11C /* QuestionCollectionViewCell.swift */,
+				2E8F236F259C37C20049F11C /* QuestionCollectionViewCell.xib */,
+			);
+			path = CommonCell;
+			sourceTree = "<group>";
+		};
+		2E0D007525A1DD0900036A54 /* QuestionView */ = {
+			isa = PBXGroup;
+			children = (
+				2E8F235F259C26260049F11C /* QuestionView.swift */,
+				2E2868DC25A3997200D06B9D /* CollectionViewMethods.swift */,
+				2EAF8A7A25A4817B000CCF87 /* HandleAnswers.swift */,
+				2E8F2364259C263D0049F11C /* QuestionView.xib */,
+			);
+			path = QuestionView;
+			sourceTree = "<group>";
+		};
+		2E2868CD25A36D5C00D06B9D /* AmountCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E0D007625A1DD6600036A54 /* AmountCollectionViewCell.swift */,
+				2E0D007725A1DD6600036A54 /* AmountCollectionViewCell.xib */,
+			);
+			path = AmountCell;
+			sourceTree = "<group>";
+		};
+		2E2868D825A36D9900D06B9D /* FaceCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E2868CE25A36D9300D06B9D /* FaceCollectionViewCell.swift */,
+				2E2868CF25A36D9300D06B9D /* FaceCollectionViewCell.xib */,
+			);
+			path = FaceCell;
+			sourceTree = "<group>";
+		};
 		2E636910EA6977D2E37CBCDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				2EDFE8E5259A69C600E4D2C1 /* InputView.xib */,
+				2E8F2357259C23380049F11C /* CustomTabBar.swift */,
 				2EDFE8EA259A69D500E4D2C1 /* InputView.swift */,
 				2E06C80B25A0AA8300337F0B /* QuestionInputView.swift */,
 				2E06C81025A0AA9800337F0B /* QuestionInputView.xib */,
@@ -192,17 +282,33 @@
 			children = (
 				2E8F2369259C34B80049F11C /* QuestionViewController.swift */,
 				2E8F2379259C91FC0049F11C /* Question.swift */,
-				2E8F2357259C23380049F11C /* CustomTabBar.swift */,
-				2E8F235F259C26260049F11C /* QuestionView.swift */,
-				2E8F236E259C37C20049F11C /* QuestionCollectionViewCell.swift */,
-				2E06C7F8259F279400337F0B /* QuestionThreeCollectionViewCell.swift */,
-				2E06C7FF259FB06A00337F0B /* YesNoCollectionViewCell.swift */,
-				2E06C800259FB06A00337F0B /* YesNoCollectionViewCell.xib */,
-				2E06C7F9259F279400337F0B /* QuestionThreeCollectionViewCell.xib */,
-				2E8F236F259C37C20049F11C /* QuestionCollectionViewCell.xib */,
-				2E8F2364259C263D0049F11C /* QuestionView.xib */,
+				2E2868D825A36D9900D06B9D /* FaceCell */,
+				2E2868CD25A36D5C00D06B9D /* AmountCell */,
+				2E0D007525A1DD0900036A54 /* QuestionView */,
+				2E0D007425A1DCDE00036A54 /* CommonCell */,
+				2E0D007025A1DCCA00036A54 /* DatePickerCell */,
+				2E0D006F25A1DCBB00036A54 /* QuestionThreeCell */,
+				2E0D006E25A1DCA800036A54 /* YesNoCell */,
 			);
 			path = Question;
+			sourceTree = "<group>";
+		};
+		2EAF8ABE25A8E24F000CCF87 /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				2EAF8A9F25A65267000CCF87 /* SummaryViewController.swift */,
+				2EAF8AA425A65296000CCF87 /* SummaryTableViewCell.swift */,
+			);
+			path = Summary;
+			sourceTree = "<group>";
+		};
+		2EAF8ACF25A8EB99000CCF87 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				2EAF8AC525A8E2B5000CCF87 /* HistoryView.swift */,
+				2EAF8ACA25A8E2C7000CCF87 /* HistoryView.xib */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		2ECCAC2E2597695400BCA1AF = {
@@ -231,7 +337,6 @@
 			isa = PBXGroup;
 			children = (
 				2ECCAC3A2597695500BCA1AF /* AppDelegate.swift */,
-				2ECCAC3C2597695500BCA1AF /* SceneDelegate.swift */,
 				2EDFE8D4259A5B7800E4D2C1 /* Onboard */,
 				2ECCACCF259901BC00BCA1AF /* UIViewControllerBackground+extensions.swift */,
 				2E8F2325259BB0F30049F11C /* SignUpViewController.swift */,
@@ -241,7 +346,10 @@
 				2EDFE8EF259A710100E4D2C1 /* LoginViewController.swift */,
 				2E8F2375259C91E60049F11C /* Question */,
 				2E8F234C259BC9DB0049F11C /* MainViewController.swift */,
+				2EAF8ABE25A8E24F000CCF87 /* Summary */,
 				2EDFE8DB259A5E2500E4D2C1 /* UserTypeViewController.swift */,
+				2EAF8ACF25A8EB99000CCF87 /* New Group */,
+				2EAF8AAC25A77659000CCF87 /* Weather.swift */,
 				2EDFE8E0259A5E4300E4D2C1 /* UserType.swift */,
 				2ECCAC6D25976B1200BCA1AF /* Colors.swift */,
 				2ECCAC402597695500BCA1AF /* Main.storyboard */,
@@ -408,9 +516,13 @@
 				2E06C81125A0AA9800337F0B /* QuestionInputView.xib in Resources */,
 				2ECCAC472597695D00BCA1AF /* LaunchScreen.storyboard in Resources */,
 				2EDFE8E6259A69C600E4D2C1 /* InputView.xib in Resources */,
+				2E0D007925A1DD6600036A54 /* AmountCollectionViewCell.xib in Resources */,
 				2E06C7FB259F279400337F0B /* QuestionThreeCollectionViewCell.xib in Resources */,
 				2E8F2365259C263D0049F11C /* QuestionView.xib in Resources */,
+				2EAF8ACB25A8E2C7000CCF87 /* HistoryView.xib in Resources */,
 				2ECCAC442597695D00BCA1AF /* Assets.xcassets in Resources */,
+				2E06C82025A0DE2100337F0B /* DatePickerCollectionViewCell.xib in Resources */,
+				2E2868D125A36D9300D06B9D /* FaceCollectionViewCell.xib in Resources */,
 				2ECCAC422597695500BCA1AF /* Main.storyboard in Resources */,
 				2E06C802259FB06B00337F0B /* YesNoCollectionViewCell.xib in Resources */,
 				2E8F2334259BC36F0049F11C /* ForgotPasswordViewController.xib in Resources */,
@@ -545,10 +657,13 @@
 				2ECCACEC2599183E00BCA1AF /* OnBoardTwoCollectionViewCell.swift in Sources */,
 				2EDFE8E1259A5E4300E4D2C1 /* UserType.swift in Sources */,
 				2ECCACD5259902EB00BCA1AF /* OnboardViewController.swift in Sources */,
+				2E0D007825A1DD6600036A54 /* AmountCollectionViewCell.swift in Sources */,
 				2EDFE8D0259A5AD300E4D2C1 /* OnBoardThreeCollectionViewCell.swift in Sources */,
 				2E06C80C25A0AA8300337F0B /* QuestionInputView.swift in Sources */,
+				2E2868D025A36D9300D06B9D /* FaceCollectionViewCell.swift in Sources */,
 				2E8F234D259BC9DB0049F11C /* MainViewController.swift in Sources */,
 				2E06C7FA259F279400337F0B /* QuestionThreeCollectionViewCell.swift in Sources */,
+				2E2868DD25A3997200D06B9D /* CollectionViewMethods.swift in Sources */,
 				2E8F2326259BB0F30049F11C /* SignUpViewController.swift in Sources */,
 				2EDFE8DC259A5E2500E4D2C1 /* UserTypeViewController.swift in Sources */,
 				2E8F2370259C37C20049F11C /* QuestionCollectionViewCell.swift in Sources */,
@@ -556,19 +671,24 @@
 				2ECCACE4259916B000BCA1AF /* OnboardFactory.swift in Sources */,
 				2EDFE8CB259A55F000E4D2C1 /* GradientLabel.swift in Sources */,
 				2E8F236A259C34B80049F11C /* QuestionViewController.swift in Sources */,
+				2EAF8AA525A65296000CCF87 /* SummaryTableViewCell.swift in Sources */,
 				2E8F2360259C26270049F11C /* QuestionView.swift in Sources */,
 				2ECCAC6E25976B1200BCA1AF /* Colors.swift in Sources */,
 				2ECCACD0259901BC00BCA1AF /* UIViewControllerBackground+extensions.swift in Sources */,
 				2E06C801259FB06B00337F0B /* YesNoCollectionViewCell.swift in Sources */,
 				2ECCAC3B2597695500BCA1AF /* AppDelegate.swift in Sources */,
+				2E06C81F25A0DE2100337F0B /* DatePickerCollectionViewCell.swift in Sources */,
+				2EAF8AC625A8E2B5000CCF87 /* HistoryView.swift in Sources */,
 				2ECCACCB2598FFB200BCA1AF /* BlueGradientView.swift in Sources */,
 				2EDFE8F0259A710100E4D2C1 /* LoginViewController.swift in Sources */,
+				2EAF8AA025A65267000CCF87 /* SummaryViewController.swift in Sources */,
 				2E8F2333259BC36F0049F11C /* ForgotPasswordViewController.swift in Sources */,
 				2E8F2358259C23380049F11C /* CustomTabBar.swift in Sources */,
 				2EDFE8EB259A69D500E4D2C1 /* InputView.swift in Sources */,
-				2ECCAC3D2597695500BCA1AF /* SceneDelegate.swift in Sources */,
+				2EAF8A7B25A4817B000CCF87 /* HandleAnswers.swift in Sources */,
 				2ECCACDF25990ACF00BCA1AF /* OnBoardOneCollectionViewCell.swift in Sources */,
 				2E06C80725A08E5800337F0B /* Attack.swift in Sources */,
+				2EAF8AAD25A77659000CCF87 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -747,6 +867,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Migraine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -754,7 +875,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ReactionCompany.Migraine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -766,6 +887,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Migraine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -773,7 +895,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ReactionCompany.Migraine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

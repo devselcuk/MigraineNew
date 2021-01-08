@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class OnboardViewController: UIViewController {
     
@@ -14,10 +15,22 @@ class OnboardViewController: UIViewController {
     @IBOutlet weak var pageStackView: UIStackView!
     
     @IBOutlet var pageImageViews: [UIImageView]!
+ 
+    
+    let key = "e55843b4d8e44219ca65ed35104f54e7"
+    
+    
+    var weatherGot = false
+    
+    let manager = CLLocationManager()
     
     var items = [OnboardItem]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        manager.delegate = self
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
+        
         let factory = OnboardFactory()
         self.items = factory.items
         collectionView.isPagingEnabled = true

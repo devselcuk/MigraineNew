@@ -17,6 +17,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         backGroundOne()
         
+        for i in UIFont.familyNames {
+            print(UIFont.fontNames(forFamilyName: i))
+        }
+        
+        
         blueGradientView.makeGradient(with: [Colors.blue1, Colors.purple], direction: .horizontal)
         
         let strokeTextAttributes: [NSAttributedString.Key : Any] = [

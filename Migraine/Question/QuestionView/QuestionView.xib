@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -24,14 +25,15 @@
             <rect key="frame" x="0.0" y="0.0" width="514" height="395"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gys-GY-mM5">
-                    <rect key="frame" x="30" y="311" width="145.5" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gys-GY-mM5">
+                    <rect key="frame" x="30" y="311" width="197" height="30"/>
                     <color key="backgroundColor" red="0.90588235289999997" green="0.91372549020000005" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="rVR-kd-J8c"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="9"/>
-                    <state key="normal" title="Sonra Devam Et">
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <inset key="imageEdgeInsets" minX="10" minY="10" maxX="30" maxY="10"/>
+                    <state key="normal" title="Sonra Devam Et" image="Group-85">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <userDefinedRuntimeAttributes>
@@ -41,7 +43,7 @@
                     </userDefinedRuntimeAttributes>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZK-cM-f9f">
-                    <rect key="frame" x="185.5" y="311" width="308.5" height="40"/>
+                    <rect key="frame" x="237" y="311" width="257" height="40"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="W4S-L7-v5q"/>
@@ -59,7 +61,7 @@
                         <action selector="next:" destination="-1" eventType="touchUpInside" id="xOY-hQ-lTo"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nPJ-t9-VCR">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nPJ-t9-VCR" userLabel="Bu atağınızın en yüksek ağrı seviyesi  nedir?">
                     <rect key="frame" x="0.0" y="44" width="514" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="65e-vr-oYJ"/>
@@ -93,7 +95,7 @@
             <constraints>
                 <constraint firstItem="zEV-2n-5Ug" firstAttribute="centerY" secondItem="wj7-Nx-xqb" secondAttribute="centerY" id="21O-e5-DVF"/>
                 <constraint firstItem="jZK-cM-f9f" firstAttribute="top" secondItem="wj7-Nx-xqb" secondAttribute="bottom" id="34h-BI-tHA"/>
-                <constraint firstItem="jZK-cM-f9f" firstAttribute="width" secondItem="wj7-Nx-xqb" secondAttribute="width" multiplier="0.6" id="3nW-Ma-kst"/>
+                <constraint firstItem="jZK-cM-f9f" firstAttribute="width" secondItem="wj7-Nx-xqb" secondAttribute="width" multiplier="0.5" id="3nW-Ma-kst"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jZK-cM-f9f" secondAttribute="trailing" constant="20" id="6Lv-Tn-Mwd"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nPJ-t9-VCR" secondAttribute="trailing" id="71y-wp-G5S"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wj7-Nx-xqb" secondAttribute="bottom" constant="50" id="7sI-Fq-Qm2"/>
@@ -114,6 +116,7 @@
         </view>
     </objects>
     <resources>
+        <image name="Group-85" width="39" height="44"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

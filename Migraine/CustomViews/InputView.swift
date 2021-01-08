@@ -19,7 +19,6 @@ class InputView  : UIView {
     @IBInspectable
     var textIsPassword : Bool = false {
         didSet {
-            print("aabbcc")
             if textIsPassword {
                 lineView.makeGradient(with: [Colors.blueGray,Colors.blueGray], direction: .horizontal)
                 textField.isSecureTextEntry = true
@@ -63,13 +62,8 @@ class InputView  : UIView {
         NSLayoutConstraint.activate(constraints)
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-       
         
-      
-           
-       
         
-       
         
         
     }
