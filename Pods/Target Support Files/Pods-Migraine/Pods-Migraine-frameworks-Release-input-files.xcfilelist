@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Migraine/Pods-Migraine-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
+${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework
